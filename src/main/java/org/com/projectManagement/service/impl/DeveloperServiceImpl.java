@@ -7,14 +7,18 @@ import org.com.projectManagement.enums.DeveloperStatus;
 import org.com.projectManagement.model.Developer;
 import org.com.projectManagement.service.DeveloperService;
 import org.com.projectManagement.service.ProjectService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import static java.util.Objects.nonNull;
 
+@Component
 public class DeveloperServiceImpl implements DeveloperService {
 
     private static final Logger log = LogManager.getLogger(DeveloperServiceImpl.class);
     private DeveloperDao developerDao;
 
+    @Autowired
     public DeveloperServiceImpl(DeveloperDao developerDao) {
         this.developerDao = developerDao;
     }

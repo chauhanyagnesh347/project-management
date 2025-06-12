@@ -2,12 +2,14 @@ package org.com.projectManagement.dao;
 
 import org.com.projectManagement.exception.DataAccessException;
 import org.com.projectManagement.model.Developer;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@Component
 public class DeveloperDao {
 
     private final List<Developer> developerData = new ArrayList<>();
