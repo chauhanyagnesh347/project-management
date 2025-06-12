@@ -1,0 +1,33 @@
+register_lead Lead1
+register_lead Lead2
+register_developer Dev1
+register_developer Dev2
+register_project Lead1 App_Developement web-development,design
+register_project Lead1 K8s_cluster_setup devops
+get_available_projects
+request_project Dev1 project1
+accept_request request1 project1 Lead1
+get_developer_details Dev1
+get_developer_details Dev2
+get_project_details project1
+get_project_details project2
+complete_project Dev1 project1
+cancel_project Lead1 project2
+
+
+
+
+
+
+
+
+
+
+
+accept_request request1 project1 Lead2
+
+
+
+
+
+
